@@ -15,7 +15,7 @@ class RegisterForm(Form):
         validators.equal_to(fieldname="confirm",message="Parola eşleşmiyor.")
 
     ])
-    confirm = PasswordField("Parola doğrula",validators=[validators.DataRequired()])
+    confirm = PasswordField("Parola doğrula :",validators=[validators.DataRequired()])
 
 
 
